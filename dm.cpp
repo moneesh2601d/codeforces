@@ -3,8 +3,8 @@
 using namespace std;
 
 #define ll long long 
-#define pp(i) pop_back(i)
-#define pb(i) push_back(i)
+#define pb pop_back
+#define eb emplace_back
 #define all(x) (x).begin(), (x).end()
 #define pi pair<int,int>
 #define pf pair<float,float>
@@ -12,22 +12,26 @@ using namespace std;
 #define f(y,n,x) for(int i=y;i<n;i=i+x)
 #define f2(y,n,x) for(int j=y;j<n;j=j+x)
 #define f3(y,n,x) for(int k=y;k<n;k=k+x)
-#define fr(n,y,x) for(int i=n;i>0;i=i-x)
-#define fr2(n,y,x) for(int j=n;j>0;j=j-x)
-#define fr3(n,y,x) for(int k=n;k>0;k=k-x)
+#define fr(n,y,x) for(int i=n;i>y;i=i-x)
+#define fr2(n,y,x) for(int j=n;j>y;j=j-x)
+#define fr3(n,y,x) for(int k=n;k>y;k=k-x)
 
-#define debug(x) cout<<#x<<"="<<x<<endl
-#define debug2(x,y) cout<<#x<<"="<<x<<" "<<#y<<"="<<y<<endl
-#define debug3(x,y,z) cout<<#x<<"="<<x<<" "<<#y<<"="<<y<<" "#z<<"="<<z<<endl
-#define debug4(w,x,y,z) cout<<#w<<"="<<w<<" "<<#x<<"="<<x<<" "<<#y<<"="<<y<<" "<<#z<<"="<<z<<endl
+#define debug(x) cout<<#x<<"="<<x<<"\n"
+#define debug2(x,y) cout<<#x<<"="<<x<<" "<<#y<<"="<<y<<"\n"
+#define debug3(x,y,z) cout<<#x<<"="<<x<<" "<<#y<<"="<<y<<" "#z<<"="<<z<<"\n"
+#define debug4(w,x,y,z) cout<<#w<<"="<<w<<" "<<#x<<"="<<x<<" "<<#y<<"="<<y<<" "<<#z<<"="<<z<<"\n"
 
-#define printendl(x) cout<<x<<endl
-#define printendl2(x,y) cout<<x<<" "<<y<<endl
-#define printendl3(x,y,z) cout<<x<<" "<<y<<" "<<z<<endl
+#define println(x) cout<<x<<"\n"
+#define println2(x,y) cout<<x<<" "<<y<<"\n"
+#define println3(x,y,z) cout<<x<<" "<<y<<" "<<z<<"\n"
 
 #define print(x) cout<<x<<" "
 #define print2(x,y) cout<<x<<" "<<y<<" "
 #define print3(x,y,z) cout<<x<<" "<<y<<" "<<z<<" "
+
+#define input(x) ll x;cin>>x
+#define input2(x,y) ll x,y;cin>>x>>y
+#define input3(x,y,z) ll x,y,z;cin>>x>>y>>z
 
 #define vi vector<int>
 #define vc vector<char>
